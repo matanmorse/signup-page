@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Bebas';
+    src: url(static/Dragon\ Fire.ttf);
+}
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(static/Norsebold.otf);
+}
 * {
     box-sizing: inherit;
     font-family: inherit;
@@ -55,7 +64,7 @@ div.splash-banner {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 1rem;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 20vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -65,8 +74,15 @@ div.splash-banner {
 }
 
 h2.splash-text{
-    font-size: 72pt;
+    letter-spacing: 10px;
+    font-family: 'Bebas';
+    font-size: 96pt;
     color: var(--text-secondary);
+    display: inline;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    margin-top: 3vh;
 }
 
 
@@ -100,12 +116,13 @@ div.org-logo img {
 }
 
 h3.org-text {
+    font-family: 'Norse Bold';
     color: var(--text-primary);
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 40%;
     text-align: center;
-    font-size: 36pt;
+    font-size: 56pt;
 }
 
 form.signup-form {
@@ -197,7 +214,8 @@ h5.org-description {
     width: 75%;
     text-align: left;
     font-size: 28pt;
-    color: var(--text-secondary)
+    color: var(--text-secondary);
+    font-weight: 400;
 }
 
 

@@ -21,49 +21,52 @@
 
         </div>
         <div class="content-right">
-            <h5 class="org-description">Faith. Heroism. Glory. Fight alongside Faerun's greatest warriors. Strong in our beliefs, bring justice to those who deserve it.</h5>
+            <h5 class="org-description">Heroism. Glory. Honor. Fight alongside Faerun's greatest warriors. Strong in our beliefs, bring justice to those who deserve it. <br><br>    Faith is the greatest weapon against evil.</h5>
+            
             <form class="signup-form">
-                <fieldset>
-                    <div class="form-box">
-                        <div class="group-right">
-                            <div class="input-group">
-                                <label for="name">Name: </label>
-                                <input type="text" id="name" required placeholder="Bron Strongsworth">
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Adventurer application: </legend>
+                        <div class="form-box">
+                            <div class="group-right">
+                                <div class="input-group">
+                                    <label for="name">Name: </label>
+                                    <input type="text" id="name" required placeholder="Bron Strongsworth">
+                                </div>
+                                <div class="input-group">
+                                    <label for="level">Level: </label>
+                                    <input type="number" id="level" placeholder=1 required>
+                                </div>
                             </div>
-                            <div class="input-group">
-                                <label for="level">Level: </label>
-                                <input type="number" id="level" placeholder=1 required>
+                            <div class="group-left">
+                                <div class="input-group">
+                                    <label for="class">Class: </label>
+                                    <select name="classes" id="class" required>
+                                        <option value="Class" selected disabled>Choose your class:</option>
+                                        <option value="Artificer">Artificer</option>
+                                        <option value="Barbarian">Barbarian</option>
+                                        <option value="Bard">Bard</option>
+                                        <option value="Cleric">Cleric</option>
+                                        <option value="Druid">Druid</option>
+                                        <option value="Fighter">Fighter</option>
+                                        <option value="Monk">Monk</option>
+                                        <option value="Paladin">Paladin</option>
+                                        <option value="Ranger">Ranger</option>
+                                        <option value="Rogue">Rogue</option>
+                                        <option value="Sorcerer">Sorcerer</option>
+                                        <option value="Warlock">Warlock</option>
+                                        <option value="Wizard">Wizard</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label for="special-skills">Special skills: </label>
+                                    <input name="special-skills" id="special-skills" type="text" class="special-skills"></textarea>
+                                </div>
                             </div>
                         </div>
-                        <div class="group-left">
-                            <div class="input-group">
-                                <label for="class">Class: </label>
-                                <select name="classes" id="class" required>
-                                    <option value="Class" selected disabled>Choose your class:</option>
-                                    <option value="Artificer">Artificer</option>
-                                    <option value="Barbarian">Barbarian</option>
-                                    <option value="Bard">Bard</option>
-                                    <option value="Cleric">Cleric</option>
-                                    <option value="Druid">Druid</option>
-                                    <option value="Fighter">Fighter</option>
-                                    <option value="Monk">Monk</option>
-                                    <option value="Paladin">Paladin</option>
-                                    <option value="Ranger">Ranger</option>
-                                    <option value="Rogue">Rogue</option>
-                                    <option value="Sorcerer">Sorcerer</option>
-                                    <option value="Warlock">Warlock</option>
-                                    <option value="Wizard">Wizard</option>
-                                </select>
-                            </div>
-                            <div class="input-group">
-                                <label for="special-skills">Special skills: </label>
-                                <textarea name="" id="" cols="20" rows="5" id="special-skills" class="special-skills"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <button type="submit" class="submit-button">Join the cause</button>
+                    </fieldset>
+                </div>
+                <button type="submit" class="submit-button">JOIN THE CAUSE</button>
             </form>
         </div>
     </div>

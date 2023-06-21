@@ -9,6 +9,8 @@
     --gray-3: #cccccc;
     --gray-4: #bbbbbb;
     --gray-5: #aaaaaa; 
+    --input-padding: .5rem
+
 }
 
 body {
@@ -28,7 +30,6 @@ div.content-right {
     background-color: ghostwhite;
     flex: 5;
     position: relative;
-    text-align: center;
 }
 
 div.content-left {
@@ -93,20 +94,49 @@ fieldset {
     margin: 0;
     border: none;
     padding: 2rem;
-    display: flex; 
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.3), 0px -4px 4px rgba(0, 0, 0, 0.1);
 }
 
+div.form-box {
+    display: flex;
+    flex-direction: row;
+}
+div.input-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+label {
+    font-weight: lighter;
+    font-size: 16pt;
+}
 button[type="submit"] {
     margin-left: 1vw;  
     margin-top: 2vh;
     padding: 1rem 2rem 1rem 2rem ;
     border-radius: 5px;
+    text-align: left;
 }
 
+input[type="number"] {
+    width: 33%;
+    padding: var(--input-padding);
+    border-radius: 2.5px;
+}
 
+input[type="text"]{
+    padding: var(--input-padding);
+}
+
+select {
+    padding: var(--input-padding);
+    width: fit-content
+}
 
 h5.org-description {
     margin-left: auto;
@@ -121,9 +151,3 @@ input {
     height: fit-content ;
 }
 
-div.input-group {
-    margin: .5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}

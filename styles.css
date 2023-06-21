@@ -28,6 +28,7 @@ div.content-right {
     background-color: ghostwhite;
     flex: 5;
     position: relative;
+    text-align: center;
 }
 
 div.content-left {
@@ -40,7 +41,7 @@ div.splash-banner {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 1rem;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 5vh;
     width: 100%;
 }
 
@@ -56,25 +57,22 @@ div.credit {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 5vh;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 div.org-info {
     margin-right: auto;
     padding: 1rem;
-    gap: 0rem;
+    gap: 1rem;
     overflow-wrap: break-word;
     margin: 1rem;
     padding: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-div.org-logo {
-    width: min(20vw, 350px);
-    height: min(20vw, 350px);
-    background-color: black;
-    border-radius: 50%;
+div.org-logo img {
+    width: min(20vw, 250px);
 }
 
 h3.org-text {
@@ -111,10 +109,21 @@ button[type="submit"] {
 
 
 h5.org-description {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    width: 75%;
     text-align: center;
     font-size: 28pt;
 }
 
 input {
     height: fit-content ;
+}
+
+div.input-group {
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

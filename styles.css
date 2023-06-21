@@ -11,6 +11,11 @@
     --gray-5: #aaaaaa; 
     --input-padding: .5rem;
     --input-width: max(200px, 15vw);
+    --color-primary: #BBC9D5;
+    --color-secondary: #7D868D;
+    --text-primary: #444471;
+    --text-secondary: ghostwhite;
+    --text-triciary: #77838A;
 }
 
 body {
@@ -27,9 +32,10 @@ div.main-content {
 }
 
 div.content-right {
-    background-color: ghostwhite;
+    background-color: #444471;
     flex: 5;
     position: relative;
+    color: var(--color-secondary)
 }
 
 div.content-left {
@@ -45,15 +51,22 @@ div.content-left {
 }
 
 div.splash-banner {
+    color: white;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 1rem;
     text-align: center;
     margin-top: 5vh;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 h2.splash-text{
     font-size: 72pt;
+    color: var(--text-secondary);
 }
 
 
@@ -72,19 +85,24 @@ div.org-info {
     padding: 1rem;
     gap: 1rem;
     overflow-wrap: break-word;
-    margin: 1rem;
+    margin: 0rem;
+    margin-top: 2vh;
     padding: 1rem;
     display: flex;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
 }
 
 div.org-logo img {
-    width: min(20vw, 250px);
+    width: min(20vw, 100px);
+    box-shadow: 0px -4px 8px rgba(255, 255, 255, 0.5), 0px 4px 8px rgba(255, 255, 255, 0.5), -4px 0px 8px rgba(255, 255, 255, 0.5), 4px 0px 8px rgba(255, 255, 255, 0.5);
 }
 
 h3.org-text {
-    color: var(--gray-5);
+    color: var(--text-primary);
     margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 40%;
     text-align: center;
     font-size: 36pt;
@@ -113,6 +131,7 @@ legend {
     font-weight: normal;
     font-size: 22pt;
     margin-bottom: 2rem;
+    color: var(--text-triciary)
 }
 
 div.form-box {
@@ -175,10 +194,10 @@ input.special-skills {
 h5.org-description {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15vmin;
     width: 75%;
     text-align: left;
     font-size: 28pt;
+    color: var(--text-secondary)
 }
 
 

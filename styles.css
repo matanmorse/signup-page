@@ -41,6 +41,7 @@
     --text-secondary: ghostwhite;
     --text-triciary: #77838A;
     --background-secondary : #DADAE3;
+    --input-group-height: initial;
 }
 
 html {
@@ -184,6 +185,7 @@ div.input-group {
     gap: 0rem;
     margin: 1rem;
     margin-left: 0;
+    height: var(--input-group-height);
 }
 
 
@@ -218,6 +220,14 @@ button[type="submit"]:hover {
     transform: translateY(-3px);
 }
 
+button[type="submit"]:active {
+    border: 2px solid var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor:pointer;
+    transform: translateY(3px);
+    transition: .1s all;
+}
+
 input, select {
     font-size: min(12pt, 10vmin);
     width: var(--input-width);
@@ -227,6 +237,7 @@ input, select {
 }
 
 textarea {
+    height: 8vh;
     font-size: 12pt;
     border-radius: 5px;
     width: var(--input-width)
@@ -264,3 +275,7 @@ input {
     height: fit-content ;
 }
 
+.red {
+    transition: 2s all;
+    color: rgb(165, 53, 53);
+}

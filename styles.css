@@ -97,7 +97,7 @@ div.splash-banner {
 h2.splash-text{
     letter-spacing: 10px;
     font-family: 'Bebas';
-    font-size: min(8vmax, 96pt);
+    font-size: min(8vmax, 76pt);
     color: var(--text-secondary);
     display: inline;
     margin: 0;
@@ -114,7 +114,7 @@ div.credit {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 3vmin;
-    font-size: min(12pt, 2vmin);
+    font-size: min(8pt, 2vmin);
 }
 
 div.org-info {
@@ -143,7 +143,7 @@ h3.org-text {
     margin-bottom: 1rem;
     width: 40%;
     text-align: center;
-    font-size: min(56pt, 12vmin);
+    font-size: min(40pt, 12vmin);
     word-wrap: normal;
 }
 
@@ -167,8 +167,8 @@ fieldset {
 
 legend {
     font-weight: normal;
-    font-size: 22pt;
-    margin-bottom: 2rem;
+    font-size: 16pt;
+    margin-bottom: .5rem;
     color: var(--text-triciary)
 }
 
@@ -183,7 +183,7 @@ div.input-group {
     display: flex;
     flex-direction: column;
     gap: 0rem;
-    margin: 1rem;
+    margin: .75rem;
     margin-left: 0;
     height: var(--input-group-height);
 }
@@ -191,18 +191,18 @@ div.input-group {
 
 label {
     font-weight: 400;
-    font-size: 12pt;
+    font-size: 8pt;
 }
 
 button[type="submit"] {
     margin-left: min(2rem, 8vh);  
     margin-top: 2vh;
     margin-bottom: 5vh;
-    padding: 1rem 2rem 1rem 2rem ;
-    width: clamp(250px, 250px, 10vw);
+    padding: .75rem 1rem .75rem 1rem ;
+    width: clamp(250px, 250px, 8vw);
     border-radius: 5px;
     text-align: center;
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: 500;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     border: none;
@@ -229,23 +229,26 @@ button[type="submit"]:active {
 }
 
 input, select {
-    font-size: min(12pt, 10vmin);
+    border: 2px solid lightgray;
+    font-size: min(8pt, 10vmin);
     width: var(--input-width);
     border-radius: 5px;
-    border: 2px solid lightgrey;
     transition: .25s all ease;
 }
 
 textarea {
-    height: 8vh;
-    font-size: 12pt;
+    transition: .25s all ease;
+    height: 9.5vh;
+    font-size: 8pt;
     border-radius: 5px;
+    border: 2px solid lightgray;
     width: var(--input-width)
 }
 
-input:focus, textarea:focus {
+input:focus-visible, textarea:focus-visible, select:focus-visible {
     border: 2px solid var(--color-background) !important;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+    outline:none;
 }
 input[type="number"] {
     padding: var(--input-padding);
@@ -265,17 +268,16 @@ h5.org-description {
     margin-right: auto;
     width: 75%;
     text-align: left;
-    font-size: 28pt;
+    font-size: 20pt;
     color: var(--text-secondary);
     font-weight: 400;
 }
 
 
-input {
-    height: fit-content ;
-}
-
 .red {
     transition: 2s all;
     color: rgb(165, 53, 53);
+}
+a :visited {
+    color: white;
 }
